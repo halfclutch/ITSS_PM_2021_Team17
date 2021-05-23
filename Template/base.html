@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/stylesheet.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+
+<nav class="navbar navbar-default navbar-light bg-light text-dark">
+    <h2 class="brand-text">CycleAI&#8482;</h2>
+    <p class="logo-main-text">
+    AI Enabled Cyclist Training Aid<br>Your trusted training app...
+    </p>
+</nav>
+
+<body>
+{% block content %}{% endblock %}
+<footer class="text-center py-3">Copyright@2021 CycleAI Inc. All rights reserved.</footer>
+</body>
+
+</html>
+

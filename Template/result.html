@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 style="text-align:center; padding-top: 30px">Your actual frontal area is: {{ actual_area }} m<sup>2</sup></h1>
+<div class="container02">
+<div class="row">
+<div class="col-sm">
+    <img src="{{url_for('static', filename=image_path)}}" width="460px">
+    <a href="{{ url_for('index')}}" class="btn btn-default">Back</a>
+</div>
+<div class="col-sm my-auto">
+    <p> Effective Coefficient of Drag (Cd): {{ Cd }} </p>
+	<p> Effective Coefficient of Drag Area (CdA): {{ CdA }} </p>
+	<p> Amount of power needed to overcome air resistance: {{ air }} Watt </p>
+	<p> Amount of power needed to overcome rolling resistance : {{ rolling }} Watt </p>
+	<p> Total pedaling power (+2% chain loss): {{ pedaling }} Watt </p>
+
+
+</div>
+</div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container01">
+<div class="row">
+<div class="col-sm">
+<img src="{{url_for('static', filename='image_02.jpg')}}" width="100%";>
+</div>
+<div class="col-sm my-auto">
+<p class="mb-0">Skin cancer is one of the top ten most frequent cancers in Singapore. </p>
+</div>
+</div>
+</div>

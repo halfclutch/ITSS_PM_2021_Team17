@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-section{
+  position: absolute;
+  top: 900px;
+  left: 1100px;
+  font-family: 'Montserrat', sans-serif;
+  color: yellow;
+}
+
+.container{
+  flex: 1 0 auto;
+}
+
+.container01{
+margin: auto;
+padding-top: 50px;
+padding-bottom: 30px;
+max-width: 1000px;
+text-align: justify;
+font-style: italic;
+}
+
+.container02{
+margin: auto;
+padding-top:20px;
+padding-bottom: 20px;
+max-width: 1000px;
+text-align: justify;
+font-style: italic;
+}
+
+.form-group{
+    margin-right: 500px;  
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+Input#Age,select#Gender,select#Mole_location{
+width: 100px;
+}
+
+footer.text-center.py-3
+{
+    background: lightgray;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height:50px;
+}
+
+input.btn.btn-primary.btn-small
+{
+    position: relative;
+    left: 400px;
+}

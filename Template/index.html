@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<img src="{{url_for('static', filename='image_01.jpg')}}" width="100%";>
+
+<section class="landing-section">
+  <h3> Wondering how posture affects cycling efficiency?<h3>
+  <h5 style="color:yellow;">Check out our phone app now.<h5> 
+</section>
+
+<div class="container01">
+<div class="row">
+<div class="col-sm">
+<img src="{{url_for('static', filename='image_02.jpg')}}" width="100%";>
+</div>
+<div class="col-sm my-auto">
+<blockquote class="blockquote">
+<p class="mb-0">CycleAI makes use of latest advances in AI to compute one's coefficient of drag area (COD area) and hence efficient cycling posture. 
+From the calcuated COD area, the apps further derives one's energy expenditure, all without the need of access to expensive and scarce wind tunnel facility. I strongly recommend CycleAI to all professional and armature cyclists.</p>
+<footer class="blockquote-footer">Mahathir Humaidi - Three-time Asean Cycling Champion</footer>
+</blockquote>
+</div>
+</div>
+</div>
+
+<form class="form-group border border-primary py-3" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+   <h5> Enter your parameters and upload your frontal image</h5>
+   <br>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Weight.label }}</label>
+   <p class="col-sm-5" >{{ form.Weight() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Speed.label }}</label>
+   <p class="col-sm-5" >{{ form.Speed() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Apparel.label }}</label>
+   <p class="col-sm-5">{{ form.Apparel() }}</p>
+   </div> 
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Helmet.label }}</label>
+   <p class="col-sm-5">{{ form.Helmet() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Frame.label }}</label>
+   <p class="col-sm-5">{{ form.Frame() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Wheels.label }}</label>
+   <p class="col-sm-5">{{ form.Wheels() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Bars.label }}</label>
+   <p class="col-sm-5">{{ form.Bars() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Staying_in_Position.label }}</label>
+   <p class="col-sm-5">{{ form.Staying_in_Position() }}</p>
+   </div>
+   
+   <div class="row">
+   <label class="col-sm-3">{{ form.Image.label }}</label>
+   <p class="col-sm-5"> {{ form.Image() }}</p>
+   </div>
+   
+   <div class="row">
+   <input type="submit" value="Upload" class="btn btn-primary btn-small">
+   </div>
+</form>
+ 
+{% endblock %}
+
+
+
+
